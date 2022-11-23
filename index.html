@@ -1,18 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
 
-    <title>Sketch</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Let's play | Pictionary!</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.5.0/dist/ml5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/IDMNYU/p5.js-speech@0.0.3/lib/p5.speech.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/hik4dsy.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+  <style>
+  </style>
+</head>
 
-    <script src="libraries/p5.min.js"></script>
-    <script src="libraries/p5.sound.min.js"></script>
-  </head>
+<body>
+  <script src="sketch.js"></script>
 
-  <body>
-    <script src="sketch.js"></script>
-  </body>
+  <div id="titolo" onclick="location.href='home.html';">Pictionary!</div>
+
+  <footer>
+  <button id="blackCol" class="button"><img src="assets/black.svg"></button>
+  <button id="redCol" class="button"><img src="assets/red.svg"></button>
+  <button id="blueCol" class="button"><img src="assets/blue.svg"></button>
+  <button id="yellowCol" class="button"><img src="assets/yellow.svg"></button>
+  <button id="greenCol" class="button"><img src="assets/green.svg"></button>
+  <button id="clearBtn" class="button"><img src="assets/trash.svg"></button>
+
+
+  <p><span id="label"></span></p>
+  <button id="time"><p><span id="tempo">START DRAWING</span></p></button>
+
+  </footer>
+
+  
+</body>
+
+</body>
+
 </html>
